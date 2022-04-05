@@ -1,0 +1,30 @@
+body{
+    background-color: #fff;
+    color: #000;
+    font-family: sans-serif;
+    font-size: 16px;
+    margin: 0%;
+}
+.container{
+    width: 1500px;
+    margin: 10px;
+}
+#main-header{
+    background-color: #373867;
+    color: #AACE9B;
+    font-size: 45px;
+    display: inline-block;
+    position: fixed;
+}
+#sidebar{
+    float: left;
+    width: 10%;
+    background-color:#D9D9E2;
+    position: fixed;
+    top: 250px;
+}
+#sidebar span{
+    color: #000;
+    font-size: 30px;
+}
+
