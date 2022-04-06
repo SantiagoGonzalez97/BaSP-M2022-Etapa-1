@@ -10,5 +10,13 @@ The problem has been resolved following the good practices provided by the compa
 ## Fragment of the landing page:
 ![Landing page](https://github.com/SantiagoGonzalez97/Test01/blob/master/semana-01/images/landing-page.png?raw=true)
 
+Week 03
+```
+Styles in CSS of the landin page
+```
+## Resolution of problem:
+
+Added styles on CSS without flexbox on the landing page we made in HTML the last week.
+
 ## Author:
 Santiago González 
