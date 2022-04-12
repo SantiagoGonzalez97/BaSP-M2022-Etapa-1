@@ -1,0 +1,219 @@
+main{
+    display: flex;
+    flex-direction: column;
+    width: 1800px;
+    margin-left: 28em;
+    margin-top: 5.0em;
+}
+.section{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex-wrap: wrap;
+}
+main h1{
+    font-family: 'Roboto',sans-serif;
+    font-size: 3.75em;
+    font-weight: bold;
+    color: #373867;
+    padding-top: 170px;
+}
+.first{
+    display: flex;
+    font-family: 'roboto', sans-serif;
+    font-weight: normal;
+    color: #373867;
+    font-size: 20px;
+    width: 25%;
+}
+.second{
+    display: flex;
+    margin-top: 3em;
+    font-family: 'roboto', sans-serif;
+    font-weight: normal;
+    color: #373867;
+    font-size: 20px;
+    width: 25%;
+}
+.clock{
+    display: flex;
+    flex-direction: column;
+    margin-left: 32em;
+    margin-top: -22em;
+}
+.clock img{
+    display: flex;
+    width: 460px;
+    height: 390px;
+    object-fit: cover;
+    filter: drop-shadow(0px 4px 4px);
+}
+.title-section{
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    color: #373867;
+    font-weight: bold;
+    margin-top: 2em;
+    margin-left: 25px;
+}
+.card-section{
+    width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+.card{
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: none;
+    padding: 20px;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.container h3{
+    font-family: 'roboto', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 1em;
+    color: #373867;
+}
+.container p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    color: #373867;
+    width: 300px;
+    margin-left: 20px;
+}
+.borderline{
+    display: flex;
+    border-bottom: #373867 2px solid;
+    width: 50%;
+    margin-top: 55px;
+    margin-left: 20px;
+}
+form{
+    margin-top: 20px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+.placeholder input{
+    width: 437px;
+    height: 40px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    color: #373867; 
+    border-color: #373867;
+    border-radius: 5px;
+    font-family: 'roboto',sans-serif;
+    margin-top: 20px;
+}
+.contact{
+    font-family: 'roboto', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: #373867;
+    margin-bottom: 40px;
+}
+.form-selector{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 1100px;
+}
+label{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 30%;
+    font-family: 'roboto',sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: #373867;
+    margin-bottom: 45px;
+}
+.form-selector input{
+    display: flex;
+    justify-content: space-between;
+    width: 15px;
+    color: #34636E;
+    margin-top: -45px;
+}
+textarea{
+    width: 920px;
+    margin-left: -10px;
+    border-color: #373867;
+    border-radius: 5px;
+    font-family: 'Roboto';
+}
+.button{
+    display: flex;
+    flex-direction: row;
+    margin-top: 25px;
+}
+.message input{
+    width: 190px;
+    height: 47px;
+    background-color: #AACE9B;
+    font-family: 'Roboto';
+    font-size: 16px;
+    color: #373867;
+    font-weight: 600;
+    border: 0;
+}
+.reset input{
+    width: 117px;
+    height: 47px;
+    margin-left: 0px;
+    font-family: 'Roboto';
+    font-size: 16px;
+    color: #373867;
+    font-weight: 600;
+    border: 0;
+    margin-left: 25px;
+}
+.about-us{
+    display: flex;
+    flex-direction: row;
+}
+.about-paragraph{
+    width: 382px;
+    margin-top: 25px;
+    margin-left: 20px;
+    color: #373867;
+    font-family: 'roboto',sans-serif;
+}
+.logo-rr{
+    width: 370px;
+    margin-left: 70px;
+    margin-top: -50px;
+}
+.last-section{
+    margin-left: 50px;
+    margin-top: 40px;
+    width: 850px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.list h5{
+    font-family: 'roboto';
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: -15px;
+    color: #373867;
+    margin-bottom: 10px;
+}
+.list ol li{
+    font-family: 'roboto';
+    font-size: 12px;
+    color: #373867;
+}

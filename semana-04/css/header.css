@@ -1,0 +1,29 @@
+#header{
+    position: fixed;
+    background-color: #373867;
+    height: 5.6em;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    z-index: 2;
+}
+#radium{
+    color: #49A37B;
+    font-family: 'roboto', sans-serif;
+    font-weight: bold;
+    font-size: 3.75em;
+    margin-left: 0.3em;
+}
+#rocket{
+    color: #AACE9B;
+    font-family: 'roboto',sans-serif;
+    font-weight: normal;
+    font-size: 3.75em;
+}
+.hamburger{
+    display: flex;
+    margin-top: 5em;
+    font-size: 3em;
+    color: #373867;
+    margin-left: -1em;
+}
