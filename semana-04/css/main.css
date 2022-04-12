@@ -1,7 +1,7 @@
 main{
     display: flex;
     flex-direction: column;
-    width: 1800px;
+    width: 100%;
     margin-left: 28em;
     margin-top: 5.0em;
 }
@@ -16,14 +16,14 @@ main h1{
     font-size: 3.75em;
     font-weight: bold;
     color: #373867;
-    padding-top: 170px;
+    padding-top: 3em;
 }
 .first{
     display: flex;
     font-family: 'roboto', sans-serif;
     font-weight: normal;
     color: #373867;
-    font-size: 20px;
+    font-size: 1.2em;
     width: 25%;
 }
 .second{
@@ -32,7 +32,7 @@ main h1{
     font-family: 'roboto', sans-serif;
     font-weight: normal;
     color: #373867;
-    font-size: 20px;
+    font-size: 1.2em;
     width: 25%;
 }
 .clock{
@@ -93,41 +93,46 @@ main h1{
 .borderline{
     display: flex;
     border-bottom: #373867 2px solid;
-    width: 50%;
-    margin-top: 55px;
-    margin-left: 20px;
+    width: 60em;
+    margin-top: 3.5em;
+    margin-left: 1.2em;
 }
 form{
-    margin-top: 20px;
-    width: 50%;
+    margin-top: 1.2em;
+    width: 60em;
     display: flex;
     flex-direction: column;
-    margin-left: 20px;
+    margin-left: 1.2em;
+}
+.placeholder{
+    display: flex;
+    justify-content: space-between;
 }
 .placeholder input{
-    width: 437px;
-    height: 40px;
+    width: 32em;
+    display: flex;
+    height: 2.5em;
+    justify-content: space-between;
     flex-direction: column;
-    flex-wrap: nowrap;
     color: #373867; 
     border-color: #373867;
-    border-radius: 5px;
+    border-radius: 0.3em;
     font-family: 'roboto',sans-serif;
-    margin-top: 20px;
+    margin-top: 1.2em;
 }
 .contact{
     font-family: 'roboto', sans-serif;
-    font-size: 14px;
+    font-size: 1em;
     font-weight: bold;
     color: #373867;
-    margin-bottom: 40px;
+    margin-bottom: 2.5em;
 }
 .form-selector{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 1100px;
+    width: 70em;
 }
 label{
     display: flex;
@@ -135,21 +140,21 @@ label{
     justify-content: space-between;
     width: 30%;
     font-family: 'roboto',sans-serif;
-    font-size: 14px;
+    font-size: 1em;
     font-weight: bold;
     color: #373867;
-    margin-bottom: 45px;
+    margin-bottom: 3em;
 }
 .form-selector input{
     display: flex;
     justify-content: space-between;
-    width: 15px;
+    width: 1em;
     color: #34636E;
-    margin-top: -45px;
+    margin-top: -3em;
 }
 textarea{
-    width: 920px;
-    margin-left: -10px;
+    width: 72em;
+    margin-left: -0.5em;
     border-color: #373867;
     border-radius: 5px;
     font-family: 'Roboto';
@@ -157,63 +162,63 @@ textarea{
 .button{
     display: flex;
     flex-direction: row;
-    margin-top: 25px;
+    margin-top: 1.5em;
 }
 .message input{
-    width: 190px;
-    height: 47px;
+    width: 11.875em;
+    height: 2.9em;
     background-color: #AACE9B;
     font-family: 'Roboto';
-    font-size: 16px;
+    font-size: 1em;
     color: #373867;
     font-weight: 600;
     border: 0;
 }
 .reset input{
-    width: 117px;
-    height: 47px;
+    width: 7.3em;
+    height: 2.9em;
     margin-left: 0px;
     font-family: 'Roboto';
-    font-size: 16px;
+    font-size: 1em;
     color: #373867;
     font-weight: 600;
     border: 0;
-    margin-left: 25px;
+    margin-left: 1.2em;
 }
 .about-us{
     display: flex;
     flex-direction: row;
 }
 .about-paragraph{
-    width: 382px;
-    margin-top: 25px;
-    margin-left: 20px;
+    width: 23.8em;
+    margin-top: 1.5em;
+    margin-left: 1.2em;
     color: #373867;
     font-family: 'roboto',sans-serif;
 }
 .logo-rr{
-    width: 370px;
-    margin-left: 70px;
-    margin-top: -50px;
+    width: 23.1em;
+    margin-left: 4.3em;
+    margin-top: -3.1em;
 }
 .last-section{
-    margin-left: 50px;
-    margin-top: 40px;
-    width: 850px;
+    margin-left: 3.1em;
+    margin-top: 2.5em;
+    width: 53.1em;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 .list h5{
     font-family: 'roboto';
-    font-size: 14px;
+    font-size: 1em;
     font-weight: bold;
-    margin-left: -15px;
+    margin-left: -1em;
     color: #373867;
-    margin-bottom: 10px;
+    margin-bottom: 0.6em;
 }
 .list ol li{
     font-family: 'roboto';
-    font-size: 12px;
+    font-size: 0.8em;
     color: #373867;
 }

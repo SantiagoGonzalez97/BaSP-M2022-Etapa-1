@@ -1,14 +1,28 @@
 footer{
+    margin-left: 21.4em;
     background-color: #D9D9E2;
-    margin-top: 100px;
+    margin-top: 5em;
     display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
 }
 .icons{
     display: flex;
     flex-direction: column;
+    margin-left: 1em;
 }
 img .icons{
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+footer p{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 14em;
+    font-family: 'roboto',sans-serif;
+    color: #373867;
+    font-weight: bold;
 }
