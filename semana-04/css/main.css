@@ -3,7 +3,7 @@ main{
     flex-direction: column;
     width: 100%;
     flex: 4;
-    padding-left: 60px;
+    padding-left: 2%;
 }
 .main-container{
     display: flex;
@@ -12,7 +12,6 @@ main{
     display: flex;
     flex-direction: row;
     width: 100%;
-    
 }
 main h1{
     font-family: 'Roboto',sans-serif;
@@ -45,12 +44,12 @@ main h1{
 }
 .clock{
     display: flex;
-
 }
 .clock img{
     display: flex;
-    width: 15vw;
-    height: 15vh;
+    width: 35vw;
+    height: 42vh;
+    padding: 2em;
     object-fit: cover;
     filter: drop-shadow(0px 4px 4px);
 }
@@ -73,13 +72,12 @@ main h1{
     min-width: 380px;
 }
 .card{
-    /* width: 100%; */
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex: 2 0 350px;
     padding: 20px;
-    min-width: 350px;
+    min-width: 280px;
 }
 .container{
     flex: 5;
@@ -142,7 +140,7 @@ form{
     justify-content: space-between;
     align-items: center;
     margin: 2% 0;
-    /* width: 70em; */
+    width: 90%;
 }
 .sistems{
     display: flex;
@@ -212,13 +210,12 @@ textarea{
     font-family: 'roboto',sans-serif;
 }
 .logo-rr{
-    width: 15%;
-    margin-left: 4.3em;
-    margin-top: -3.1em;
+    width: 40%;
+    height: 40%;
 }
 .last-section{
     margin: 2% 0 2% 2%;
-    width: 53.1em;
+    width: 90%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
