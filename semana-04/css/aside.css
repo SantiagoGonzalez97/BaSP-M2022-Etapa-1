@@ -3,9 +3,10 @@ aside{
     display: flex;
     width: 21.4em;
     background-color: #D9D9E2;
-    height: 58.1em;
-    position: fixed;
-    top:5.6em;
+    height: 100;
+    flex: 1;
+    height: auto;
+    padding-top: 50px;
 }
 #menu{
     display: flex;
