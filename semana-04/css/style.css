@@ -2,10 +2,14 @@ body{
     display: flex;
     flex-direction: column;
     height: 100%;
+    width: 100%;
 }
-@media (max-width:779px) {
+@media (max-width:780px) {
     body aside{
         display: none;
+    }
+    .hamburger{
+        display: flex;
     }
     
 }
