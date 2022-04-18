@@ -1,7 +1,7 @@
-// If else:
+// For:
 //Ejercicios: 
 //5) a.
-/*var equipos = ['river', 'central', 'newells', 'estudiantes', 'independiente'];
+var equipos = ['river', 'central', 'newells', 'estudiantes', 'independiente'];
 for (var x = 0; x < equipos.length; x++) {
     alert(equipos[x]);
     console.log(equipos)
@@ -19,7 +19,7 @@ var sentence = "";
 for (var z = 0; z < equipos.length; z++) {
     sentence = sentence + equipos[z];
 }
-alert(sentence);*/
+alert(sentence);
 
 //5) d.
 var myVar = [];
@@ -27,3 +27,4 @@ for (var f = 0; f < 10; f++) {
     myVar.push(f)
 }
 console.log(myVar)
+//************************************************************************************************************************************/

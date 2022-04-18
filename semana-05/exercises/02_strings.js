@@ -31,14 +31,11 @@ cadenaIndex = 'Este es un texto'
 console.log(cadenaIndex.indexOf(' '))
 
 //2) f.
-
-var texto;
-texto = 'naturaleza rosarigacina'
-texto = texto.substring(0,1).toUpperCase() + texto.substring(1,indexOf(' ')) + texto.substring(indexOf(' '), indexOf(' ') + 1)
-console.log(texto)
-
-
-
-
-
-
+var cadenaF, total;
+cadenaF = 'naturaleza rosarigacina';
+total = cadenaF.substring(0,1).toUpperCase() + cadenaF.substring(1, cadenaF.indexOf(" ")).toLowerCase() 
++ " " + cadenaF.substring(cadenaF.indexOf(" ") + 1, cadenaF.indexOf(" ") + 2).toUpperCase() + 
+cadenaF.substring(cadenaF.indexOf(" ") + 2).toLowerCase();
+console.log('\n-Exercise 2.f:');
+console.log(total);
+//************************************************************************************************************************************/
