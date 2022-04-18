@@ -15,14 +15,22 @@ Week 03
 Styles in CSS of the landin page
 ```
 ## Resolution of problem:
-
 Added styles on CSS without flexbox on the landing page we made in HTML the last week.
 
 Week 04
 ```
 Styles whit Flexbox
 ```
+## Resolution of problem:
 In this week the problematic was recreate the landing page whit Flexbox, a css property. Making the responsive web in devices like tablet and smartphones.
+
+Week 05
+```
+Exercises of JavaScript (ECMA5)
+```
+## Resolution of problem:
+The exercises were solved following the study material and practices provided by the company.
+
 
 ## Author:
 Santiago González 
