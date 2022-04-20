@@ -2,8 +2,10 @@ main{
     display: flex;
     flex-direction: column;
     width: 100%;
-    flex: 4;
     padding-left: 2%;
+}
+.main-footer{
+    flex: 6;
 }
 .main-container{
     display: flex;
@@ -47,8 +49,8 @@ main h1{
 }
 .clock img{
     display: flex;
-    width: 35vw;
-    height: 42vh;
+    width: 30vw;
+    height: 38vh;
     padding: 2em;
     object-fit: cover;
     filter: drop-shadow(0px 4px 4px);
@@ -60,6 +62,7 @@ main h1{
     font-weight: bold;
     margin-top: 2em;
     width: 0 auto;
+    margin-left: 1em;
 }
 .star{
     flex: 1;
@@ -127,7 +130,7 @@ form{
     font-family: 'roboto',sans-serif;
     margin-top: 1.2em;
 }
-.contact{
+.contact-area{
     font-family: 'roboto', sans-serif;
     font-size: 1em;
     font-weight: bold;
