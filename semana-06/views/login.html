@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="/css/login.css">
     <link rel="stylesheet" href="/css/footer.css">
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/javascript/login.js">
     <title>Log in</title>
 </head>
 <body>
@@ -29,10 +28,13 @@
             <div>
                 <label>Email</label>
                 <input id="email" type="text" placeholder="Email">
+                <p id="emailError" class="hidden">Error: enter valid mail</p>
             </div>
             <div>
                 <label>Password</label>
                 <input id="password" type="password" placeholder="Password">
+                <p id="passwordErrorLength" class="hidden">Error: write at least 8 characters</p>
+                <p id="passwordErrorCaracter" class="hidden">Error: only text and numbers</p>
             </div>
             <div class="buttons">
                 <button class="btn-login"><a href="">Continue</a></button>
@@ -59,5 +61,6 @@
             <p class="footer-p">Trackgenix &copy;</p>
         </div>
     </footer>
+    <script src="../javascript/login.js"></script>
 </body>
 </html>

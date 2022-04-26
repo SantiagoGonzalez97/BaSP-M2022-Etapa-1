@@ -1,3 +1,5 @@
+// Nombre de validaciones
+
 var nombre = document.getElementById("name");
 console.log("nombre", nombre)
 var surname = document.getElementById("surname");
@@ -46,7 +48,7 @@ password.addEventListener("blur", passwordBlur);
 password.addEventListener("focus", passwordFocus);
 passwordRepeat.addEventListener("blur", passwordRepeatBlur);
 
-// Blur de valoidaciones
+// Blur de validaciones
 
 function nameBlur (){
     var nameValue = nombre.value;
