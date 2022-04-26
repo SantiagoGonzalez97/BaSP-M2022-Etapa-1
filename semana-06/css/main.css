@@ -1,0 +1,238 @@
+main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-left: 2%;
+}
+.main-footer{
+    flex: 6;
+}
+.main-container{
+    display: flex;
+}
+.section{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+main h1{
+    font-family: 'Roboto',sans-serif;
+    font-size: 3.75em;
+    font-weight: bold;
+    color: #373867;
+    padding-top: 1em;
+}
+.text-container{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+.first{
+    display: flex;
+    font-family: 'roboto', sans-serif;
+    font-weight: normal;
+    color: #373867;
+    font-size: 1.2em;
+    width: 100%;
+}
+.second{
+    display: flex;
+    margin-top: 3em;
+    font-family: 'roboto', sans-serif;
+    font-weight: normal;
+    color: #373867;
+    font-size: 1.2em;
+    width: 100%;
+}
+.clock{
+    display: flex;
+}
+.clock img{
+    display: flex;
+    width: 30vw;
+    height: 38vh;
+    padding: 2em;
+    object-fit: cover;
+    filter: drop-shadow(0px 4px 4px);
+}
+.title-section{
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    color: #373867;
+    font-weight: bold;
+    margin-top: 2em;
+    width: 0 auto;
+    margin-left: 1em;
+}
+.star{
+    flex: 1;
+}
+.card-section{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    min-width: 380px;
+}
+.card{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex: 2 0 350px;
+    padding: 20px;
+    min-width: 280px;
+}
+.container{
+    flex: 5;
+}
+.container h3{
+    font-family: 'roboto', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 1em;
+    color: #373867;
+}
+.container p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    color: #373867;
+    width: 300px;
+    margin-left: 20px;
+}
+.borderline{
+    display: flex;
+    border-bottom: #373867 2px solid;
+    width: 90%;
+    margin-top: 3.5em;
+    margin-left: 1.2em;
+}
+form{
+    margin-top: 1.2em;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 1.2em;
+}
+.placeholder{
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+}
+.placeholder input{
+    width: 45%;
+    display: flex;
+    height: 2.5em;
+    justify-content: space-between;
+    flex-direction: column;
+    color: #373867; 
+    border-color: #373867;
+    border-radius: 0.3em;
+    font-family: 'roboto',sans-serif;
+    margin-top: 1.2em;
+}
+.contact-area{
+    font-family: 'roboto', sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    color: #373867;
+    margin: 2% 0;
+}
+.form-selector{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2% 0;
+    width: 90%;
+}
+.sistems{
+    display: flex;
+    flex-direction: row;
+}
+label{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 30%;
+    font-family: 'roboto',sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    color: #373867;
+    width: auto;
+}
+.form-selector input{
+    display: flex;
+    justify-content: space-between;
+    width: 1em;
+    color: #34636E;
+    
+}
+textarea{
+    width: 95%;
+    margin-left: -0.5em;
+    border-color: #373867;
+    border-radius: 5px;
+    font-family: 'Roboto';
+}
+.button{
+    display: flex;
+    flex-direction: row;
+    margin-top: 1.5em;
+}
+.message input{
+    width: 11.875em;
+    height: 2.9em;
+    background-color: #AACE9B;
+    font-family: 'Roboto';
+    font-size: 1em;
+    color: #373867;
+    font-weight: 600;
+    border: 0;
+}
+.reset input{
+    width: 7.3em;
+    height: 2.9em;
+    margin-left: 0px;
+    font-family: 'Roboto';
+    font-size: 1em;
+    color: #373867;
+    font-weight: 600;
+    border: 0;
+    margin-left: 1.2em;
+}
+.about-us{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+}
+.about-paragraph{
+    width: 23.8em;
+    margin-top: 1.5em;
+    margin-left: 1.2em;
+    color: #373867;
+    font-family: 'roboto',sans-serif;
+}
+.logo-rr{
+    width: 40%;
+    height: 40%;
+}
+.last-section{
+    margin: 2% 0 2% 2%;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.list h5{
+    font-family: 'roboto';
+    font-size: 1em;
+    font-weight: bold;
+    margin-left: -1em;
+    color: #373867;
+    margin-bottom: 0.6em;
+}
+.list ol li{
+    font-family: 'roboto';
+    font-size: 0.8em;
+    color: #373867;
+}
