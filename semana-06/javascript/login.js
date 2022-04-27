@@ -3,14 +3,16 @@ var email = document.getElementById("email");
 console.log("email", email)
 var password = document.getElementById("password");
 console.log("password", password)
+var login = document.getElementById("btn-login");
+console.log("btn-login", login)
 
 
-// Validaciones
+// Eventos
 email.addEventListener("blur", emailBlur);
 email.addEventListener("focus", emailFocus);
 password.addEventListener("blur", passwordBlur);
 password.addEventListener("focus", passwordFocus);
-
+login.addEventListener("click", loginClick);
 
 // Blur de validaciones
 function emailBlur () {
@@ -30,7 +32,6 @@ function emailBlur () {
         emailValidateModal = false;
     }
 }
-
 function passwordBlur () {
     var passwordValue = password.value;
     var letterPassword = 0;
@@ -69,16 +70,25 @@ function passwordBlur () {
     }
 }
 
-
 //Focus de validaciones
 function emailFocus () {
     p = document.getElementById("emailError");
     p.classList.replace("active", "hidden");
 }
-
 function passwordFocus () {
     p = document.getElementById("passwordErrorLength");
     p2 = document.getElementById("passwordErrorCaracter");
     p.classList.replace("active", "hidden");
     p2.classList.replace("active", "hidden");
+}
+
+//Alertas
+function loginClick(){
+    if (!emailValidateModal) {
+        alert("Error: Email: " + email.value);
+    } else if (!passwordValidateModal) {
+        alert("Error: Password: " + password.value);
+    } else if (emailValidateModal && passwordValidateModal) {
+        alert("Login successful! \nEmail: " + email.value + "\nPassword: " + password.value);
+    }
 }

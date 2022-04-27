@@ -22,10 +22,22 @@ var password = document.getElementById("password");
 console.log("password", password)
 var passwordRepeat = document.getElementById("passwordRepeat");
 console.log("passwordRepeat", passwordRepeat)
+var signup = document.getElementById("btn-signup");
+console.log("btn-signup", signup)
 var checkedPW;
+var cont = false;
+var validateSurname = false;
+var validatePhone = false;
+var validateDni = false;
+var postalValidateModal = false;
+var passwordRepeatValidateModal = false;
+var dateValue = false;
+var addressValue = false;
+var locationValue = false;
 
-// Validaciones
 
+
+// Eventos
 nombre.addEventListener("blur", nameBlur);
 nombre.addEventListener("focus", nameFocus);
 surname.addEventListener("blur", surnameBlur);
@@ -47,9 +59,9 @@ email.addEventListener("focus", emailFocus);
 password.addEventListener("blur", passwordBlur);
 password.addEventListener("focus", passwordFocus);
 passwordRepeat.addEventListener("blur", passwordRepeatBlur);
+signup.addEventListener("click", signupClick);
 
-// Blur de validaciones
-
+// Funciones blur
 function nameBlur (){
     var nameValue = nombre.value;
     if (nameValue.length < 4){
@@ -107,7 +119,7 @@ function surnameBlur (){
 }
 
 function dniBlur (){
-    dniValue = document.getElementById("dni").value;
+    dniValue = dni.value;
     if(dniValue.length < 8){
         var p = document.getElementById("dniErrorLength");
         p.classList.replace("hidden", "active");
@@ -408,7 +420,7 @@ function passwordRepeatBlur () {
     }
 }
 
-// Focus de Validaciones
+// Funcion focus
 
 function nameFocus () {
     var p = document.getElementById("nameErrorLength");
@@ -485,4 +497,49 @@ function passwordRepeatFocus () {
     p2 = document.getElementById("passwordRepeatErrorCaracter");
     px.classList.replace("active", "hidden");
     p2.classList.replace("active", "hidden");
+}
+
+//Alerta
+function signupClick(e){
+    e.preventDefault();
+    var message = "";
+    
+    if (!cont) {
+        message+=" Error: Name: " + nombre.value;
+    }
+    if (!validateSurname) {
+        message+=" Error: Surname: " + surname.value;
+    }
+    if (!validateDni) {
+        message+=" Error: DNI: " + dni.value;
+    }
+    if (!dateValue){
+        message+=" Error: Date " + date.value
+    }
+    if (!validatePhone) {
+        message+=" Error: Phone " + phone.value;
+    }
+    if (!addressValue) {
+        message+=" Error: Address: " + address.value
+    }
+    if (!locationValue) {
+        message+=" Error: Location: " + locationsingup.value;
+    }
+    if (!postalValidateModal){
+        message+=" Error: Postal " + postal.value;
+    }
+    if (!emailValidateModal) {
+        message+=" Error: Email: " + email.value;
+    }
+    if (!passwordValidateModal) {
+        message+=" Error: Password: " + password.value;
+    }
+    if (!passwordRepeatValidateModal){
+        message+=" Error: Repeat password " + passwordRepeat.value;
+    }
+    if (emailValidateModal && passwordValidateModal && cont && validateSurname && validateDni && dateValue && validatePhone && addressValue && locationValue &&  postalValidateModal && passwordRepeatValidateModal) {
+        message+="Login successful! \nEmail: " + email.value + "\nPassword: " + password.value + "\nName: " + nombre.value + "\nSurname: " + surname.value + "\nDNI: " + dni.value + "\nDate: " + date.value + "\nPhone:" + phone.value + "\nAddress: " + address.value + "\nLocation: " + locationsingup.value + "\nPostal: " + postal.value + "\nRepeat password: " + passwordRepeat.value;
+    }
+    alert(message);
+    
 }

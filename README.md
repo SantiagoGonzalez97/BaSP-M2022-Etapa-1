@@ -31,6 +31,11 @@ Exercises of JavaScript (ECMA5)
 ## Resolution of problem:
 The exercises were solved following the study material and practices provided by the company.
 
-
+Week 06
+```
+DOM whit JavaScript
+```
+## Resolution of problem:
+Making the log in and sign up of the landin page of Trackgenix.
 ## Author:
 Santiago González 

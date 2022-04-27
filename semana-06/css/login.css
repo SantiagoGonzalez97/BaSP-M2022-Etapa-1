@@ -31,7 +31,6 @@ h1{
     color: red;
     font-family: 'roboto';
 }
-
 div{
     width: 90%;
 }
@@ -59,7 +58,7 @@ form{
     display: flex;
     justify-content: space-around;
 }
-.btn-login{
+#btn-login{
     background-color: #AACE9B;
     padding: 5px 0;
     color: #373867;
@@ -73,7 +72,6 @@ form{
     font-size: 1em;
     line-height: 19px;
 }
-
 label{
     color: #373867;
     text-align: center;
@@ -100,7 +98,7 @@ input::placeholder{
     font-size: 1em;
     line-height: 19px;
 }
-.btn-login button{
+#btn-login button{
     margin: 5px 10px;
     width: 109px;
     height: 45px;
@@ -112,7 +110,7 @@ input::placeholder{
     font-size: 1em;
     line-height: 19px;
 }
-.btn-login button:first-child{
+#btn-login button:first-child{
     background-color: #AACE9B;
     border-radius: 5px;
     min-width: 50px;

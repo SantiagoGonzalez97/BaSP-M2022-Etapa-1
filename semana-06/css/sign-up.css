@@ -106,7 +106,7 @@ input::placeholder{
     line-height: 19px;
     color: #373867;
 }
-.btn-create{
+#btn-signup{
     background-color: #AACE9B;
     margin-top: 10px;
     width: 30%;
