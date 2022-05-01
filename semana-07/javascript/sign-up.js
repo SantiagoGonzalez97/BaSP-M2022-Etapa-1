@@ -34,7 +34,7 @@ var passwordRepeatValidateModal = false;
 var dateValue = false;
 var addressValue = false;
 var locationValue = false;
-
+var emailValidateModal = false;
 
 
 // Eventos
@@ -149,13 +149,13 @@ function dniBlur (){
 
 function dateBlur (){
     var dateValue = date.value;
-    var day = dateValue.substring(0,2);
+    var day = dateValue.substring(3,5);
     var check1 = dateValue.substring(2,3);
-    var month = dateValue.substring(3,5);
+    var month = dateValue.substring(0,2);
     var check2 = dateValue.substring(5,6);
     var year = dateValue.substring(6);
-    day = Number(day);
     month = Number(month);
+    day = Number(day);
     year = Number(year);
     if(day < 1 || day > 31){
         var p = document.getElementById("dateError");
@@ -502,7 +502,7 @@ function passwordRepeatFocus () {
 //Alerta
 function signupClick(e){
     e.preventDefault();
-    var message = "";
+    //var message = "";
     
     if (!cont) {
         message+=" Error: Name: " + nombre.value;
@@ -520,7 +520,7 @@ function signupClick(e){
         message+=" Error: Phone " + phone.value;
     }
     if (!addressValue) {
-        message+=" Error: Address: " + address.value
+        message+=" Error: Address: " + address.value;
     }
     if (!locationValue) {
         message+=" Error: Location: " + locationsingup.value;
@@ -540,6 +540,38 @@ function signupClick(e){
     if (emailValidateModal && passwordValidateModal && cont && validateSurname && validateDni && dateValue && validatePhone && addressValue && locationValue &&  postalValidateModal && passwordRepeatValidateModal) {
         message+="Login successful! \nEmail: " + email.value + "\nPassword: " + password.value + "\nName: " + nombre.value + "\nSurname: " + surname.value + "\nDNI: " + dni.value + "\nDate: " + date.value + "\nPhone:" + phone.value + "\nAddress: " + address.value + "\nLocation: " + locationsingup.value + "\nPostal: " + postal.value + "\nRepeat password: " + passwordRepeat.value;
     }
-    alert(message);
+    //alert(message);
     
+}
+
+function getData(){
+    var urls = new URLSearchParams ({
+        name: nombre.value,
+        lastName: surname.value,
+        dni: dni.value,
+        dob: date.value,
+        phone: phone.value,
+        address: address.value,
+        city: locationsingup.value,
+        zip: postal.value,
+        email: email.value, 
+        password: password.value,
+        passwordRepeat: passwordRepeat.value
+    });
+    fetch ("https://basp-m2022-api-rest-server.herokuapp.com/signup?" + urls)
+    .then(function(response){
+    return response.json();
+    })
+    .then(function (responseJson){
+        if (responseJson.success){
+            window.alert("Successfully requested " + responseJson.msg);
+            local();
+        } else{
+            alert("Failed login " + responseJson.msg)
+        }
+    })
+    .catch(function(error){
+        console.log(error);
+        alert("Error: Invalid data");
+    });
 }

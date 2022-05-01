@@ -12,7 +12,7 @@ email.addEventListener("blur", emailBlur);
 email.addEventListener("focus", emailFocus);
 password.addEventListener("blur", passwordBlur);
 password.addEventListener("focus", passwordFocus);
-//login.addEventListener("click", loginClick);
+login.addEventListener("click", loginClick);
 
 // Blur de validaciones
 function emailBlur () {
@@ -112,7 +112,7 @@ function getData(){
     })
     .catch(function(error){
         console.log(error);
-        alert("error");
+        alert("Error: Invalid email or password");
     });
 }
 
