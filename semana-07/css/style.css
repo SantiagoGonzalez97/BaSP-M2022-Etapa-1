@@ -1,0 +1,94 @@
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+@media (max-width:780px) {
+    #header{
+        display: flex;
+        width: 100%;
+    }
+    body aside{
+        display: none;
+    }
+    .hamburger{
+        display: flex;
+    }
+    
+}
+@media (max-width:480px) {
+    .card{
+        display: flex;
+        align-items: center;
+    }
+    #header{
+        display: flex;
+        width: 100%;
+    }
+    #radium{
+        font-size: 2.5em ;
+    }
+    #rocket{
+        font-size: 2.5em;
+    }
+    .section, .placeholder, .form-selector, .last-section, footer{
+        flex-direction: column;
+    }
+    .text-container{
+        width: 95%;
+    }
+    .clock img{
+        height: 30vh;
+        padding: 2em;
+        width: 100%;;
+    }
+    .section{
+        width: 95%;
+    }
+    .sistems{
+        justify-content: flex-start;
+    }
+    .button{
+        flex-direction: column;
+        /* align-content: center; */
+    }
+    .message input{
+        width: 100%;
+    }
+    .message{
+        justify-content: center;
+        margin: 0 auto;
+        display: flex;
+    }
+    .reset input{
+        width: 29%;
+        margin-left: 0;
+    }
+    .reset{
+        margin-top: 10px;
+        justify-content: center;
+        display: flex;
+    }
+    .last-section{
+        align-items: center;
+    }
+    .list{
+        padding: 0.5em 0;
+    }
+    .footer-text{
+        width: 50%;
+        margin: 1px auto;
+    }
+    .rrss{
+        justify-content: center;
+        width: auto;
+        padding: .4em 0;
+    }
+    .footer{
+        align-content: center;
+    }
+    .footer-p{
+        width: 50%;
+    }
+}
