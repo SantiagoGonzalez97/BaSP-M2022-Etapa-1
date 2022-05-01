@@ -95,88 +95,50 @@ function loginClick(){
 
 
 // Semana-07
-fetch("https://basp-m2022-api-rest-server.herokuapp.com/login?" + "email=" + email.value + "&password=" + password.value)
-.then(function(response){
-    return response.json
-})
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*function getData(){
-    var email = document.getElementById("email").value;
-    var password = document.getElementById("password").value;
-    var email = new Promise((resolve, reject) =>{
-        if (email ="rose@radiumrocket.com"){
-            resolve(" Email loaded!");
-        }else{
-            reject(" Wrogn email");
-        }
-    });
-    email
-    .then(res =>{
-        console.log("Succses:" + res);
-        alert("Succses:" + res);
-    })
-    .catch(error =>{
-        console.log("Error:" + error);
-        alert("Error" + error); 
-    });
-}*/
-
-/*var user = [{
-    id: 1,
-    email: "rose@radiumrocket.com"
-}];
-var pass = [{
-    id: 2,
-    password: "BaSP2022"
-}];
-
 function getData(){
-    var email = document.getElementById("email").value;
-    var password = document.getElementById("password").value;
-    var obtenerUser = id =>{
-        return new Promise ((resolve, reject)=>{
-            if(user.find(user => user.id)){
-                resolve("Correct email!");
-            } else{
-                reject("User not found!");
-            }
-        });
-    }
-};
-obtenerUser(1)
-.then(res=>{
-    console.log(res)
-})
-.catch(error=>{
-    console.log(error)
-})*/
+    var urls = new URLSearchParams ({
+        email: email.value, password: password.value 
+    });
+    fetch ("https://basp-m2022-api-rest-server.herokuapp.com/login?" + urls)
+    .then(function(response){
+    return response.json();
+    })
+    .then(function (responseJson){
+        if (responseJson.success){
+            alert("Successfully requested " + responseJson.msg);
+        } else{
+            alert("Failed login " + responseJson.msg)
+        }
+    })
+    .catch(function(error){
+        console.log(error);
+        alert("error");
+    });
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
