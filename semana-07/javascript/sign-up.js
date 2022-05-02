@@ -575,3 +575,27 @@ function getData(){
         alert("Error: Invalid data");
     });
 }
+function local(){
+    localStorage.setItem("name", nombre.value);
+    localStorage.setItem("lastName", surname.value);
+    localStorage.setItem("dni", dni.value);
+    localStorage.setItem("dateOfBirth", date.value);
+    localStorage.setItem("phone", phone.value);
+    localStorage.setItem("address", address.value);
+    localStorage.setItem("location", locationsingup.value);
+    localStorage.setItem("postalCode", postal.value);
+    localStorage.setItem("email", email.value);
+    localStorage.setItem("password", password.value);
+}
+function getItms(){
+    nombre.value = localStorage.getItem("name");
+    surname.value = localStorage.getItem("lastName");
+    dni.value = localStorage.getItem("dni");
+    date.value = localStorage.getItem("dateOfBirth");
+    phone.value = localStorage.getItem("phone");
+    address.value = localStorage.getItem("address");
+    locationsingup.value = localStorage.getItem("location");
+    postal.value = localStorage.getItem("postalCode");
+    email.value = localStorage.getItem("email");
+    password.value = localStorage.getItem("password");
+}
