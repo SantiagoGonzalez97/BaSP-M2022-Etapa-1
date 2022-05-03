@@ -37,5 +37,12 @@ DOM whit JavaScript
 ```
 ## Resolution of problem:
 Making the log in and sign up of the landin page of Trackgenix.
+
+Week 07
+```
+Async, promises and API's on JavaScrpit
+```
+## Resolution of problem:
+Send the data of the form to a web server with an HTTP request.
 ## Author:
 Santiago González 
